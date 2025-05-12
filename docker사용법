@@ -1,0 +1,12 @@
+# 모든 코드는 cmd에 입력
+
+# 1. 도커 이미지 다운로드
+  docker pull starforesty/mgdocker:v0.1
+
+# 2. 주피터랩 실행
+    docker run -it -p 8888:8888 -v "--주피터랩을 실행시킬 폴더 주소--":/workspace starforesty/mgdocker:v0.1 jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --notebook-dir=/workspace
+
+    
+    # 실행 결과 하단
+    # To access the server, open this file in a browser:
+    # 뒤에 있는 주소 중 하나를 주소창에 입력
