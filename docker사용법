@@ -10,3 +10,26 @@
     # 실행 결과 하단
     # To access the server, open this file in a browser:
     # 뒤에 있는 주소 중 하나를 주소창에 입력
+
+# 3. 이미지가 잘 실행됐는지 확인
+  import sys
+
+  # 패키지 리스트 (필요에 따라 추가/삭제 가능)
+  packages = [
+              'numpy', 'pandas', 'sklearn', 're', 'json', 'requests', 'time', 'xml',
+              'folium', 'os', 'zipfile', 'sklearn', 'geopy', 'shapely', 'geopandas',
+              'branca', 'glob', 'random', 'sys'
+  ]
+
+  print(f"{sys} version: {sys.version}\n")
+
+  for pkg in packages:
+      try:
+          mod = __import__(pkg)
+          print(f"{pkg:16} : {mod.__version__}")
+      except ImportError:
+          print(f"{pkg:16} : Not installed")
+      except AttributeError:
+          print(f"{pkg:16} : Version attribute not found")
+
+    # 출력결과에서 numpy 버전이 1.23.5라면 잘 된 것
