@@ -25,7 +25,7 @@ TeamMG는 공공 데이터를 활용해서
 
 ## 🛠️ 사용한 도구들  
 - Python 🐍  
-- Pandas, Plotly, Seaborn 📈  
+- Pandas, Plotly, Seaborn, folium, matplotlib 📈  
 - Jupyter Notebook 📓  
 - 공공 데이터 포털 API 🔌  
 - Docker 🐳, GitHub 🐙  
